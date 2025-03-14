@@ -40,11 +40,10 @@ const CalendarView: React.FC<CalendarViewProps> = ({ entries, onSelectDate }) =>
   };
   
   return (
-    <div className="w-full">
-      <h3 className="text-lg font-medium mb-2">Calendar</h3>
+    <div className="w-full flex justify-center">
       <Calendar
         mode="single"
-        className="rounded-md border"
+        className="rounded-md border mx-auto"
         onSelect={onSelectDate}
         modifiersClassNames={{
           selected: 'bg-primary text-primary-foreground',
