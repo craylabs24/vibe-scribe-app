@@ -2,7 +2,7 @@
 import React from 'react';
 import { format } from 'date-fns';
 import { MoodEntry, MoodLevel } from '@/types';
-import { SmilePlus, Smile, Meh, Frown, FrownOpen, Trash2 } from 'lucide-react';
+import { SmilePlus, Smile, Meh, Frown, AngryIcon, Trash2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { 
   AlertDialog,
@@ -29,7 +29,7 @@ const MoodHistoryItem: React.FC<MoodHistoryItemProps> = ({ entry, onDelete }) =>
     good: <Smile className="h-6 w-6 text-mood-good" />,
     neutral: <Meh className="h-6 w-6 text-mood-neutral" />,
     bad: <Frown className="h-6 w-6 text-mood-bad" />,
-    terrible: <FrownOpen className="h-6 w-6 text-mood-terrible" />,
+    terrible: <AngryIcon className="h-6 w-6 text-mood-terrible" />,
   };
 
   const moodLabels: Record<MoodLevel, string> = {

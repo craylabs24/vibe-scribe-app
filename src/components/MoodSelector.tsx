@@ -5,7 +5,7 @@ import {
   Smile, 
   Meh, 
   Frown, 
-  FrownOpen 
+  AngryIcon 
 } from 'lucide-react';
 import { MoodLevel } from '@/types';
 import { cn } from '@/lib/utils';
@@ -42,7 +42,7 @@ const moods: Array<{ value: MoodLevel; icon: React.ReactNode; label: string; col
   },
   { 
     value: 'terrible', 
-    icon: <FrownOpen className="mood-icon" />, 
+    icon: <AngryIcon className="mood-icon" />, 
     label: 'Terrible', 
     color: 'bg-mood-terrible/10 hover:bg-mood-terrible/20 border-mood-terrible/30' 
   },
