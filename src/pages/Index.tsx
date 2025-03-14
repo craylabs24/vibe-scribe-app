@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
@@ -40,16 +39,7 @@ const Index = () => {
   }, [todayEntry]);
 
   return (
-    <div className="min-h-screen gradient-bg p-4 md:p-6">
-      <header className="flex justify-between items-center mb-6">
-        <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent">
-          Mood Scribe
-        </h1>
-        <Button variant="outline" className="bg-white/50 backdrop-blur-sm border-white/20">
-          <PlusIcon className="h-4 w-4 mr-1" /> New Entry
-        </Button>
-      </header>
-
+    <div className="min-h-screen bg-white p-4 md:p-6">
       <Tabs defaultValue="log" className="w-full">
         <TabsList className="grid grid-cols-3 mb-4">
           <TabsTrigger value="log" className="data-[state=active]:bg-primary/10">
